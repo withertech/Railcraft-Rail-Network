@@ -11,10 +11,6 @@ local ticket = component.get("ticket_machine")
 -- Add a new window to MineOS workspace
 local workspace, window, menu = system.addWindow(GUI.filledWindow(1, 1, 80, 40, 0xE1E1E1))
 
-
--- Get localization table dependent of current system language
-local localization = system.getCurrentScriptLocalization()
-
 local layout = window:addChild(GUI.layout(1, 1, window.width, window.height, 2, 2))
 local comboBox = layout:addChild(GUI.comboBox(1, 1, 30, 3, 0xDDDDDD, 0x2D2D2D, 0xCCCCCC, 0x888888))
 local printButton = layout:addChild(GUI.button(1, 1, 26, 3, 0xEEEEEE, 0x000000, 0xAAAAAA, 0x0, "Print Ticket"))
